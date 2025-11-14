@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of [Your Name] — web developer and designer">
+    <title>Shuvam BC Portfolio</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header with site title and navigation -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Shuvam BC</h1>
+            <nav class="main-nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <h2 class="hero-title">Hello, I'm <span class="accent">Shuvam BC</span></h2>
+                <p class="hero-subtitle">A passionate web developer creating beautiful and functional websites</p>
+                <p class="hero-location">Based in Biratnagar, Nepal</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">About Me</h2>
+                <div class="about-content">
+                    <p>I'm a fullstack developer with a passion for creating clean, accessible, and user-friendly websites. I enjoy turning complex problems into simple, beautiful designs.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee.</p>
+                    <!-- Replace with your actual resume file -->
+                    <p><a href="https://github.com/bcShuvam?tab=repositories" class="resume-link" target="_blank">View my projects on github</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading">Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/Project1.png" alt="Screenshot of Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Project One</h3>
+                            <p class="project-description">A web application built with html, css and JavaScript. It is a rock, paper, and scissors.</p>
+                            <div class="project-links">
+                                <a href="https://bcshuvam.github.io/RockPaperScissors.github.io/" class="project-link"  target="_blank">Live Demo</a>
+                                <a href="https://github.com/bcShuvam/RockPaperScissors.github.io" class="project-link"  target="_blank">Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/Project2.png" alt="Screenshot of Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Project Two</h3>
+                            <p class="project-description">An e-commerce platform with shopping cart functionality, payment integration, and order management system.</p>
+                            <div class="project-links">
+                                <a href="https://bcshuvam.github.io/IMDb-Movie-Search/" class="project-link"  target="_blank">Live Demo</a>
+                                <a href="https://github.com/bcShuvam/IMDb-Movie-Search" class="project-link"  target="_blank">Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading">Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Nodejs</li>
+                    <li>Mongodb</li>
+                    <li>MySQL</li>
+                    <li>Postgresql</li>
+                    <li>Flutter</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Get In Touch</h2>
+                <p class="contact-intro">Feel free to reach out if you'd like to collaborate or just say hello!</p>
+                
+                <!-- Contact Form -->
+                <!-- Replace 'your-form-id' with your actual Formspree form ID, or use mailto: fallback -->
+                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST" aria-label="Contact form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                
+                <!-- Alternative: mailto fallback (uncomment and modify if not using Formspree) -->
+                <!-- 
+                <p class="contact-fallback">
+                    Or email me directly at <a href="mailto:[EMAIL]">[EMAIL]</a>
+                </p>
+                -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year">2025</span> Shuvam BC. All rights reserved.</p>
+            <p class="footer-links">
+                <a href="https://github.com/bcShuvam" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/shuvambc/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:bcshuvam@gmail.com">Email</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
