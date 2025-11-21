@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal portfolio of [Your Name] — web developer and designer">
     <title>Shuvam BC Portfolio</title>
-    
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -30,6 +31,10 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <!-- Dark/Light Mode Toggle -->
+           <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                <i class="theme-icon fa fa-moon-o" aria-hidden="true"></i>
+            </button>
         </div>
     </header>
 
@@ -61,7 +66,7 @@
             <div class="container">
                 <h2 id="projects-heading">Projects</h2>
                 <div class="projects-grid">
-                    <article class="project-card">
+                    <article class="project-card" data-project-url="https://bcshuvam.github.io/RockPaperScissors.github.io/">
                         <div class="project-image">
                             <img src="images/Project1.png" alt="Screenshot of Project 1">
                         </div>
@@ -69,13 +74,13 @@
                             <h3>Project One</h3>
                             <p class="project-description">A web application built with html, css and JavaScript. It is a rock, paper, and scissors.</p>
                             <div class="project-links">
-                                <a href="https://bcshuvam.github.io/RockPaperScissors.github.io/" class="project-link"  target="_blank">Live Demo</a>
-                                <a href="https://github.com/bcShuvam/RockPaperScissors.github.io" class="project-link"  target="_blank">Source Code</a>
+                                <span class="project-link">Live Demo</span>
+                                <span class="project-link" data-github-url="https://github.com/bcShuvam/RockPaperScissors.github.io">Source Code</span>
                             </div>
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card" data-project-url="https://bcshuvam.github.io/IMDb-Movie-Search/">
                         <div class="project-image">
                             <img src="images/Project2.png" alt="Screenshot of Project 2">
                         </div>
@@ -83,8 +88,8 @@
                             <h3>Project Two</h3>
                             <p class="project-description">An e-commerce platform with shopping cart functionality, payment integration, and order management system.</p>
                             <div class="project-links">
-                                <a href="https://bcshuvam.github.io/IMDb-Movie-Search/" class="project-link"  target="_blank">Live Demo</a>
-                                <a href="https://github.com/bcShuvam/IMDb-Movie-Search" class="project-link"  target="_blank">Source Code</a>
+                                <span class="project-link">Live Demo</span>
+                                <span class="project-link" data-github-url="https://github.com/bcShuvam/IMDb-Movie-Search">Source Code</span>
                             </div>
                         </div>
                     </article>
@@ -92,22 +97,169 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Skills Section with Progress Bars -->
         <section class="skills" id="skills" aria-labelledby="skills-heading">
             <div class="container">
                 <h2 id="skills-heading">Skills</h2>
-                <ul class="skills-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Nodejs</li>
-                    <li>Mongodb</li>
-                    <li>MySQL</li>
-                    <li>Postgresql</li>
-                    <li>Flutter</li>
-                    <li>Java</li>
-                    <li>Python</li>
-                </ul>
+                <div class="skills-progress-container">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">MongoDB</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">MySQL</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">PostgreSQL</span>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Flutter</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HTML5 Media Section -->
+        <section class="media-section" id="media" aria-labelledby="media-heading">
+            <div class="container">
+                <h2 id="media-heading">Media & Canvas</h2>
+                <div class="media-container">
+                    <div class="media-item">
+                        <h3>Video</h3>
+                        <video controls class="media-video">
+                            <source src="assets/video/james_doakes_dexter_meme.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="media-item">
+                        <h3>Audio</h3>
+                        <audio controls class="media-audio">
+                            <source src="assets/audio/GTA_IV_Loading_Screen_song.mp3" type="audio/mpeg">
+                            Your browser does not support the audio tag.
+                        </audio>
+                    </div>
+                    <div class="media-item">
+                        <h3>Canvas Drawing</h3>
+                        <canvas id="myCanvas" width="400" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Slider Section -->
+        <section class="slider-section" id="slider" aria-labelledby="slider-heading">
+            <div class="container">
+                <h2 id="slider-heading">Project Gallery</h2>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slider-slide active">
+                            <img src="images/Project1.png" alt="Project 1">
+                        </div>
+                        <div class="slider-slide">
+                            <img src="images/Project2.png" alt="Project 2">
+                        </div>
+                        <div class="slider-slide">
+                            <img src="images/profile.png" alt="Project 1">
+                        </div>
+                    </div>
+                    <button class="slider-btn slider-prev" id="prevBtn" aria-label="Previous image">&#8249;</button>
+                    <button class="slider-btn slider-next" id="nextBtn" aria-label="Next image">&#8250;</button>
+                    <div class="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flexbox vs Grid Section -->
+        <section class="layout-section" id="layout" aria-labelledby="layout-heading">
+            <div class="container">
+                <h2 id="layout-heading">Flexbox vs Grid – Short Note</h2>
+                <div class="layout-content">
+                    <p>Flexbox and Grid are both CSS layout systems, but they serve different purposes.</p>
+                    <p><strong>Flexbox</strong> is one-dimensional (row or column). It is best for aligning items in a single direction, such as navigation bars, cards, or buttons.</p>
+                    <p><strong>Grid</strong> is two-dimensional (rows and columns). It is ideal for full-page layouts or sections requiring precise row/column alignment.</p>
+                    <p class="layout-choice"><strong>Which one I chose:</strong> I choose <strong>Grid</strong> to arrange a major section such as the projects or gallery layout because it provides better control over two-dimensional layouts and allows for more complex arrangements.</p>
+                </div>
             </div>
         </section>
 
@@ -118,21 +270,24 @@
                 <p class="contact-intro">Feel free to reach out if you'd like to collaborate or just say hello!</p>
                 
                 <!-- Contact Form -->
-                <!-- Replace 'your-form-id' with your actual Formspree form ID, or use mailto: fallback -->
-                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST" aria-label="Contact form">
+                <form class="contact-form" id="contactForm" aria-label="Contact form">
+                    <div id="form-message" class="form-message"></div>
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="nameError"></span>
                     </div>
                     
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError"></span>
                     </div>
                     
                     <div class="form-group">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message" id="messageError"></span>
                     </div>
                     
                     <button type="submit" class="submit-btn">Send Message</button>
@@ -159,5 +314,13 @@
             </p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        ↑
+    </button>
+
+    <!-- JavaScript -->
+    <script src="javascript/main.js"></script>
 </body>
 </html>
