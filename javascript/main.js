@@ -100,7 +100,7 @@ function initContactForm() {
             localStorage.setItem('formData', JSON.stringify(formData));
             
             // Redirect to form-details.html
-            window.location.href = 'form-details.html';
+            window.location.href = 'form.html';
         } else {
             formMessage.textContent = 'Please fix the errors above';
             formMessage.className = 'form-message error';
